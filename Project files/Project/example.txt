@@ -1,0 +1,234 @@
+Student Name: Parker, Peter
+
+Student ID: 654321
+Number of courses enrolled: 4
+
+Course No  Course Name  Credits Grade 
+CSC150     ComputerSci      4      A
+CHM348     Chemistry        4      A
+ENG101     English          3      B
+BIO234     Biology          4      A
+
+Total number of credit hours: 15
+Current Term GPA: 3.80
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Holland, Alec
+
+Student ID: 324598
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CSC150     ComputerSci      4      A
+MTH345     Mathematics      4      B
+BIO234     Biology          4      A
+
+Total number of credit hours: 12
+Current Term GPA: 3.67
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Creed, Victor
+
+Student ID: 785623
+Number of courses enrolled: 5
+
+Course No  Course Name  Credits Grade 
+CSC150     ComputerSci      4      A
+CHM348     Chemistry        4      B
+MTH345     Mathematics      4      A
+ENG101     English          3      B
+BUS128     Business         3      C
+
+Total number of credit hours: 18
+Current Term GPA: 3.28
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Monroe, Ororo
+
+Student ID: 937146
+Number of courses enrolled: 4
+
+Course No  Course Name  Credits Grade 
+CSC150     ComputerSci      4      B
+HIS101     History          3      C
+BIO234     Biology          4      B
+BUS128     Business         3      B
+
+Total number of credit hours: 14
+Current Term GPA: 2.79
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Kovacs, Walter
+
+Student ID: 913782
+Number of courses enrolled: 4
+
+Course No  Course Name  Credits Grade 
+CHM348     Chemistry        4      B
+CSC150     ComputerSci      4      A
+MTH345     Mathematics      4      B
+ENG101     English          3      C
+
+Total number of credit hours: 15
+Current Term GPA: 3.07
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Gordon, Barbara
+
+Student ID: 765345
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CSC201     ComputerSci      4    ***
+MTH345     Mathematics      4    ***
+BIO234     Biology          4    ***
+
+Total number of credit hours: 12
+*** Grades are being held for not paying the tuition. ***
+Amount Due: $4140.00
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Grimm, Benjamin
+
+Student ID: 645915
+Number of courses enrolled: 2
+
+Course No  Course Name  Credits Grade 
+CHM348     Chemistry        4      A
+CSC150     ComputerSci      4      B
+
+Total number of credit hours: 8
+Current Term GPA: 3.50
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Dibny, Ralph
+
+Student ID: 351759
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CSC150     ComputerSci      4      B
+BIO234     Biology          4      B
+ENG101     English          3      C
+
+Total number of credit hours: 11
+Current Term GPA: 2.73
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Luthor, Lex
+
+Student ID: 345678
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CSC201     ComputerSci      4    ***
+HIS101     History          3    ***
+BIO234     Biology          4    ***
+
+Total number of credit hours: 11
+*** Grades are being held for not paying the tuition. ***
+Amount Due: $3795.00
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Richards, Reed
+
+Student ID: 159753
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CHM348     Chemistry        4      B
+MTH345     Mathematics      4      B
+ENG101     English          3      B
+
+Total number of credit hours: 11
+Current Term GPA: 3.00
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Troy, Donna
+
+Student ID: 965874
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CSC150     ComputerSci      4      A
+ENG101     English          3      B
+HIS101     History          3      B
+
+Total number of credit hours: 10
+Current Term GPA: 3.40
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Kent, Clark
+
+Student ID: 145632
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CSC201     ComputerSci      4    ***
+HIS101     History          3    ***
+BIO234     Biology          4    ***
+
+Total number of credit hours: 11
+*** Grades are being held for not paying the tuition. ***
+Amount Due: $3795.00
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Parrington, Samantha
+
+Student ID: 456987
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CSC201     ComputerSci      4      A
+MTH345     Mathematics      4      A
+BIO234     Biology          4      A
+
+Total number of credit hours: 12
+Current Term GPA: 4.00
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Rogers, Steven
+
+Student ID: 789456
+Number of courses enrolled: 3
+
+Course No  Course Name  Credits Grade 
+CHM348     Chemistry        4      A
+CSC201     ComputerSci      4      B
+HIS101     History          3      A
+
+Total number of credit hours: 11
+Current Term GPA: 3.64
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+Student Name: Wayne, Bruce
+
+Student ID: 123456
+Number of courses enrolled: 5
+
+Course No  Course Name  Credits Grade 
+CHM348     Chemistry        4      B
+CSC201     ComputerSci      4      B
+MTH345     Mathematics      4      A
+ENG101     English          3      A
+HIS101     History          3      A
+
+Total number of credit hours: 18
+Current Term GPA: 3.56
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+

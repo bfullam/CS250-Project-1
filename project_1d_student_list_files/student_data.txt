@@ -1,0 +1,83 @@
+345.0
+Bruce Wayne 123456 Y 5
+Chemistry CHM348 4 B
+ComputerSci CSC201 4 B
+Mathematics MTH345 4 A
+English ENG101 3 A
+History HIS101 3 A
+
+Steven Rogers 789456 Y 3
+Chemistry CHM348 4 A
+ComputerSci CSC201 4 B
+History HIS101 3 A
+
+Samantha Parrington 456987 Y 3
+ComputerSci CSC201 4 A
+Mathematics MTH345 4 A
+Biology BIO234 4 A
+
+Clark Kent 145632 N 3
+ComputerSci CSC201 4 B
+History HIS101 3 A
+Biology BIO234 4 B
+
+Donna Troy 965874 Y 3
+ComputerSci CSC150 4 A
+English ENG101 3 B
+History HIS101 3 B
+
+Reed Richards 159753 Y 3
+Chemistry CHM348 4 B
+Mathematics MTH345 4 B
+English ENG101 3 B
+
+Lex Luthor 345678 N 3
+ComputerSci CSC201 4 A
+History HIS101 3 A
+Biology BIO234 4 A
+
+Ralph Dibny 351759 Y 3
+ComputerSci CSC150 4 B
+Biology BIO234 4 B
+English ENG101 3 C
+
+Benjamin Grimm 645915 Y 2
+Chemistry CHM348 4 A
+ComputerSci CSC150 4 B
+
+Barbara Gordon 765345 N 3
+ComputerSci CSC201 4 B
+Mathematics MTH345 4 B
+Biology BIO234 4 A
+
+Walter Kovacs 913782 Y 4
+Chemistry CHM348 4 B
+ComputerSci CSC150 4 A
+Mathematics MTH345 4 B
+English ENG101 3 C
+
+Ororo Monroe 937146 Y 4
+ComputerSci CSC150 4 B
+History HIS101 3 C
+Biology BIO234 4 B
+Business BUS128 3 B
+
+Victor Creed 785623 Y 5
+ComputerSci CSC150 4 A
+Chemistry CHM348 4 B
+Mathematics MTH345 4
+English ENG101 3 B
+Business BUS128 3 C
+
+Alec Holland 324598 Y 3
+ComputerSci CSC150 4 A
+Mathematics MTH345 4 B
+Biology BIO234 4 A
+
+Peter Parker 654321 Y 4
+ComputerSci CSC150 4 A
+Chemistry CHM348 4 A
+English ENG101 3 B
+Biology BIO234 4 A
+
+END

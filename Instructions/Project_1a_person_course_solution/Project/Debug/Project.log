@@ -1,0 +1,19 @@
+﻿Build started 3/18/2014 8:45:12 AM.
+     1>Project "C:\Users\Gabriella\Desktop\C_FILES\_SPRING_2014\A250\__CS_A250_TODAY\__Day_1\Project_1_Grade_Report_SLL\Project_1a_Person_Course\Project_1a_person_course_solution_new\Project\Project.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Course.cpp Main.cpp Person.cpp
+         Person.cpp
+         Main.cpp
+         Course.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Gabriella\Desktop\C_FILES\_SPRING_2014\A250\__CS_A250_TODAY\__Day_1\Project_1_Grade_Report_SLL\Project_1a_Person_Course\Project_1a_person_course_solution_new\Debug\Project.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Gabriella\Desktop\C_FILES\_SPRING_2014\A250\__CS_A250_TODAY\__Day_1\Project_1_Grade_Report_SLL\Project_1a_Person_Course\Project_1a_person_course_solution_new\Debug\Project.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Gabriella\Desktop\C_FILES\_SPRING_2014\A250\__CS_A250_TODAY\__Day_1\Project_1_Grade_Report_SLL\Project_1a_Person_Course\Project_1a_person_course_solution_new\Debug\Project.lib" /MACHINE:X86 Debug\Course.obj
+         Debug\Main.obj
+         Debug\Person.obj
+         LINK : C:\Users\Gabriella\Desktop\C_FILES\_SPRING_2014\A250\__CS_A250_TODAY\__Day_1\Project_1_Grade_Report_SLL\Project_1a_Person_Course\Project_1a_person_course_solution_new\Debug\Project.exe not found or not built by the last incremental link; performing full link
+         Project.vcxproj -> C:\Users\Gabriella\Desktop\C_FILES\_SPRING_2014\A250\__CS_A250_TODAY\__Day_1\Project_1_Grade_Report_SLL\Project_1a_Person_Course\Project_1a_person_course_solution_new\Debug\Project.exe
+     1>Done Building Project "C:\Users\Gabriella\Desktop\C_FILES\_SPRING_2014\A250\__CS_A250_TODAY\__Day_1\Project_1_Grade_Report_SLL\Project_1a_Person_Course\Project_1a_person_course_solution_new\Project\Project.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.43
