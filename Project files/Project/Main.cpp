@@ -3,7 +3,7 @@
 */
 
 #include "InputHandler.h"
-
+#include "OutputHandler.h"
 #include <iostream>
 #include <string>
 #include <iomanip>
@@ -36,7 +36,8 @@ void displayMenu()
 	cout << "    3: Search student by last name" << endl;
 	cout << "    4: Print students by course" << endl;
 	cout << "    5: Print students on hold" << endl;
-	cout << "    6: To exit" << endl;
+    cout << "    6: Print students to file" << endl;
+	cout << "    7: To exit" << endl;
 
 }
 
@@ -51,7 +52,7 @@ void processChoice(const StudentList& studentList, double tuitionRate)
 
 	cout << fixed << showpoint << setprecision(2); 
 
-	while (choice != 6)
+	while (choice != 7)
 	{
 		string fName, lName;
 		int ssn = 0;
@@ -105,6 +106,12 @@ void processChoice(const StudentList& studentList, double tuitionRate)
 			cout << endl;
 
 			break;
+        
+        case 6:
+            printAllStudentsToFile(studentList, tuitionRate);
+            cout << endl;
+                
+            break;
 
 			// Incorrect selection
 		default: 

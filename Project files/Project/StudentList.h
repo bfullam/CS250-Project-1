@@ -51,9 +51,8 @@ public:
 	// printAllStudents
 	void printAllStudents(double tuitionRate) const;
 
-	// printStudentsToFile
-	void printStudentsToFile(double tuitionRate) const;
-
+    	void printStudentsToFile(ofstream& outp, double tuitionRate) const;
+    
 	// destroyStudentList
 	void destroyStudentList();
 
