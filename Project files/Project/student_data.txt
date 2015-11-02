@@ -65,7 +65,7 @@ Business BUS128 3 B
 Victor Creed 785623 Y 5
 ComputerSci CSC150 4 A
 Chemistry CHM348 4 B
-Mathematics MTH345 4
+Mathematics MTH345 4 A
 English ENG101 3 B
 Business BUS128 3 C
 

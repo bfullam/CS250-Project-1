@@ -132,10 +132,19 @@ void StudentList::printAllStudents(double tuitionRate) const
 	}
 }
 
-// printStudentsToFile
-void StudentList::printStudentsToFile(double tuitionRate) const
+void StudentList::printStudentsToFile(ofstream& outp, double tuitionRate) const
 {
-
+    if(count == 0)
+        outp << "Cannot print. No students in the list.";
+    else
+    {
+        Node *traverse = first;
+        while(traverse != NULL)
+        {
+            traverse->getStudent().printStudentInfoToFile(outp, tuitionRate);
+            traverse = traverse->getNext();
+        }
+    }
 }
 
 // destroyStudentList
