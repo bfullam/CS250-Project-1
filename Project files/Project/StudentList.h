@@ -28,37 +28,37 @@ class StudentList
 public:
 
 	// default constructor
-
+	StudentList();
 
 	// addStudent
-
+	void addStudent(const Student& student);
 
 	// getNoOfStudents
-
+	int getNoOfStudents() const;
 
 	// printStudentByID
-
+	void printStudentByID(int id, double tuitionRate) const;
 
 	// printStudentsByCourse
-
+	void printStudentsByCourse(const string& course) const;
 
 	// printStudentByName
-
+	void printStudentsByName(const string& lastName) const;
 
 	// printStudentsOnHold
-
+	void printStudentsOnHold(double tuitionRate) const;
 
 	// printAllStudents
-
+	void printAllStudents(double tuitionRate) const;
 
 	// printStudentsToFile
-
+	void printStudentsToFile(double tuitionRate) const;
 
 	// destroyStudentList
-	
+	void destroyStudentList();
 
 	// destructor
-
+	~StudentList();
 
 private:
 	Node *first;
