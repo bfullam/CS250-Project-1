@@ -37,7 +37,7 @@ void StudentList::printStudentByID(int id, double tuitionRate) const
 		{
 			if (p1->getStudent().getID() == id)
 			{
-				p1->getStudent().printStudentInfo();
+				p1->getStudent().printStudentInfo(tuitionRate);
 				found = true;
 			}
 			p1 = p1->getNext();
@@ -109,7 +109,9 @@ void StudentList::printStudentsOnHold(double tuitionRate) const
 		{
 			if (p1->getStudent().isTuitionPaid() == false)
 			{
-				p1->getStudent().printStudentInfo(tuitionRate);
+				p1->getStudent().printStudentInfo();
+				cout << "    Amount Due: $" << p1->getStudent().billingAmount(tuitionRate) << endl;
+
 				found = true;
 			}
 			p1 = p1->getNext();
