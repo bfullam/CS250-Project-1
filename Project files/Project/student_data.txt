@@ -47,7 +47,7 @@ ComputerSci CSC150 4 B
 
 Barbara Gordon 765345 N 3
 ComputerSci CSC201 4 B
-Mathematics MTH345 4 A
+Mathematics MTH345 4 B
 Biology BIO234 4 A
 
 Walter Kovacs 913782 Y 4
@@ -65,7 +65,7 @@ Business BUS128 3 B
 Victor Creed 785623 Y 5
 ComputerSci CSC150 4 A
 Chemistry CHM348 4 B
-Mathematics MTH345 4 A
+Mathematics MTH345 4
 English ENG101 3 B
 Business BUS128 3 C
 
