@@ -3,44 +3,38 @@
 // default constructor
 StudentList::StudentList()
 {
-	first = NULL;
-	last = NULL;
-	count = 0;
+	studentList = new vector <Student> ;
 }
 
 // addStudent
 void StudentList::addStudent(const Student& student)
 {
-	Node *newNode = new Node(student, first);
-	first = newNode;
-	if (getNoOfStudents() == 0)
-		last = newNode;
-	count++;
+	studentList->push_back(student);
 }
 
 // getNoOfStudents
 int StudentList::getNoOfStudents() const
 {
-	return count;
+	return static_cast<int>(studentList->size());
 }
 
 // printStudentByID
 void StudentList::printStudentByID(int id, double tuitionRate) const
 {
-	if (count == 0)
+	if (getNoOfStudents() == 0)
 		cerr << "List is empty.";
 	else
 	{
+		vector<Student>::const_iterator iter = studentList->begin();
 		bool found = false;
-		Node *p1 = first;
-		while (p1 != NULL)
+		while (iter != studentList->end() && found == false)
 		{
-			if (p1->getStudent().getID() == id)
+			if (iter->getID() == id)
 			{
-				p1->getStudent().printStudentInfo(tuitionRate);
+				iter->printStudentInfo();
 				found = true;
 			}
-			p1 = p1->getNext();
+			iter++;
 		}
 		if (!found)
 			cout << "No student with ID# found in the list.";
@@ -50,23 +44,19 @@ void StudentList::printStudentByID(int id, double tuitionRate) const
 // printStudentsByCourse
 void StudentList::printStudentsByCourse(const string& course) const
 {
-	if (count == 0)
+	if (getNoOfStudents() == 0)
 		cerr << "List is empty.";
 	else
 	{
+		vector<Student>::const_iterator iter;
 		bool found = false;
-		Node *p1 = first;
-		while (p1 != NULL)
+		for (iter = studentList->begin(); iter != studentList->end(); iter++)
 		{
-			if (p1->getStudent().getNumberOfCourses() != 0)
+			if (iter->isEnrolledInCourse(course))
 			{
-				if (p1->getStudent().isEnrolledInCourse(course))
-				{
-					p1->getStudent().printStudentInfo();
-					found = true;
-				}
+				iter->printStudentInfo();
+				found = true;
 			}
-			p1 = p1->getNext();
 		}
 		if (!found)
 			cout << "No student enrolled in " + course;
@@ -76,20 +66,19 @@ void StudentList::printStudentsByCourse(const string& course) const
 // printStudentByName
 void StudentList::printStudentsByName(const string& lastName) const
 {
-	if (count == 0)
+	if (getNoOfStudents() == 0)
 		cerr << "List is empty.";
 	else
 	{
+		vector<Student>::const_iterator iter;
 		bool found = false;
-		Node *p1 = first;
-		while (p1 != NULL)
+		for (iter = studentList->begin(); iter != studentList->end(); iter++)
 		{
-			if (p1->getStudent().getLastName() == lastName)
+			if (iter->getLastName() == lastName)
 			{
-				p1->getStudent().printStudentInfo();
+				iter->printStudentInfo();
 				found = true;
 			}
-			p1 = p1->getNext();
 		}
 		if (!found)
 			cout << "No student with last name " + lastName + " is in the list";
@@ -99,22 +88,21 @@ void StudentList::printStudentsByName(const string& lastName) const
 // printStudentsOnHold
 void StudentList::printStudentsOnHold(double tuitionRate) const
 {
-	if (count == 0)
+	if (getNoOfStudents() == 0)
 		cerr << "List is empty.";
 	else
 	{
+		vector<Student>::const_iterator iter;
 		bool found = false;
-		Node *p1 = first;
-		while (p1 != NULL)
+		for (iter = studentList->begin(); iter != studentList->end(); iter++)
 		{
-			if (p1->getStudent().isTuitionPaid() == false)
+			if (!iter->isTuitionPaid())
 			{
-				p1->getStudent().printStudentInfo();
-				cout << "    Amount Due: $" << p1->getStudent().billingAmount(tuitionRate) << endl;
+				iter->printStudentInfo();
+				cout << "    Amount Due: $" << iter->billingAmount(tuitionRate) << endl;
 
 				found = true;
 			}
-			p1 = p1->getNext();
 		}
 		if (!found)
 			cout << "There are no students on hold.";
@@ -124,43 +112,37 @@ void StudentList::printStudentsOnHold(double tuitionRate) const
 // printAllStudents
 void StudentList::printAllStudents(double tuitionRate) const
 {
-	Node *p1 = first;
-	while (p1 != NULL)
+	if (getNoOfStudents() == 0)
+		cerr << "List is empty.";
+	else
 	{
-		p1->getStudent().printStudentInfo(tuitionRate);
-		p1 = p1->getNext();
+		vector<Student>::const_iterator iter;
+		for (iter = studentList->begin(); iter != studentList->end(); iter++)
+		{
+			iter->printStudentInfo(tuitionRate);
+		}
 	}
 }
 
 void StudentList::printStudentsToFile(ofstream& outp, double tuitionRate) const
 {
-    if(count == 0)
+    if(getNoOfStudents() == 0)
         outp << "Cannot print. No students in the list.";
     else
     {
-        Node *traverse = first;
-        while(traverse != NULL)
-        {
-            traverse->getStudent().printStudentInfoToFile(outp, tuitionRate);
-            traverse = traverse->getNext();
-        }
+		vector<Student>::const_iterator iter;
+		for (iter = studentList->begin(); iter != studentList->end(); iter++)
+		{
+			iter->printStudentInfoToFile(outp, tuitionRate);
+		}
     }
 }
 
 // destroyStudentList
 void StudentList::destroyStudentList()
 {
-	Node *p1 = first->getNext();
-	Node *p2 = first;
-	while (p1 != NULL)
-	{
-		delete p2;
-		p2 = p1;
-		p1 = p1->getNext();
-	}
-	first = NULL;
-	last = NULL;
-	count = 0;
+	delete studentList;
+	studentList = NULL;
 }
 
 // destructor

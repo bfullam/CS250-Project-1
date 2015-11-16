@@ -155,12 +155,13 @@ void Student::printStudentInfoToFile(ofstream& out, double tuitionRate) const
     
     	for (int i = 0; i < numberOfCourses; i++)
     	{
-        	out << left << setw(8) << coursesEnrolled[i].getCourseNumber() << "   " << 		setw(15) << coursesEnrolled[i].getCourseName();
+        	out << left << setw(8) << coursesEnrolled[i].getCourseNumber() << "   " << 	setw(15) << coursesEnrolled[i].getCourseName();
         	out.unsetf(ios::left);
         	out << setw(3) << coursesEnrolled[i].getCourseCredits() << "   ";
         	if (isTuitionPaid())
-            		out << setw(4) << coursesEnrolled[i].getCourseGrade() << endl;
-        	else out << setw(4) << "***" << endl;
+            	out << setw(4) << coursesEnrolled[i].getCourseGrade() << endl;
+        	else 
+				out << setw(4) << "***" << endl;
     	}
     
     	out << "Total number of credit hours: " << getCreditsEnrolled() << endl;

@@ -76,6 +76,7 @@
   <ItemGroup>
     <ClInclude Include="Course.h" />
     <ClInclude Include="InputHandler.h" />
+    <ClInclude Include="OutputHandler.h" />
     <ClInclude Include="Person.h" />
     <ClInclude Include="Student.h" />
     <ClInclude Include="StudentList.h" />

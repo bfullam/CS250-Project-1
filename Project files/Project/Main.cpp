@@ -1,5 +1,11 @@
 /*
-	(name header)
+	Fullam, Bryan
+	Long, Keith
+	Diaz, Cesar
+	CS A250
+	November 4, 2015
+
+	Project 1
 */
 
 #include "InputHandler.h"

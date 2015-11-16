@@ -5,23 +5,10 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 using namespace std;
 
-class Node
-{
-public:
-	Node( ): student( ), next(NULL) {} 
-    Node(const Student& newStudent, Node *newNext) 
-		: student(newStudent), next(newNext){}
-    Student getStudent( ) const { return student; }
-	Node* getNext( ) const { return next; }	
-    void setStudent(const Student& newStudent) { student = newStudent; }
-	void setNext(Node *newNext) { next = newNext; }
-private:
-    Student student;	
-    Node *next;		
-};
 
 class StudentList
 {
@@ -51,7 +38,7 @@ public:
 	// printAllStudents
 	void printAllStudents(double tuitionRate) const;
 
-    	void printStudentsToFile(ofstream& outp, double tuitionRate) const;
+    void printStudentsToFile(ofstream& outp, double tuitionRate) const;
     
 	// destroyStudentList
 	void destroyStudentList();
@@ -60,9 +47,7 @@ public:
 	~StudentList();
 
 private:
-	Node *first;
-	Node *last;
-	int count;
+	vector<Student> *studentList;
 };
 
 #endif
